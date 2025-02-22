@@ -1,7 +1,15 @@
 name: seekqr_app
+repository: https://github.com/jhondiaz/MonorepoSeekQrApp
+
 packages:
   - apps/*
   - packages/*
+
+
+command:
+  dev_dependencies:
+
+    build_runner: ^2.4.15
 
 scripts:
   bootstrap:
@@ -13,7 +21,7 @@ scripts:
   release:
     run: melos exec --scope="seekqr_app" -- flutter run --release
   generate:flutter:
-     run: melos exec -c 1 --depends-on="build_runner" --flutter -- "flutter pub run build_runner build --delete-conflicting-outputs"
+     run: melos exec flutter pub run build_runner build
      description: Build all generated files for Flutter packages in this project.
 
 
