@@ -1,0 +1,14 @@
+# Flutter/Dart related
+.dart_tool/
+.packages
+.pub-cache/
+build/
+android/.gradle/
+ios/Pods/
+ios/.symlinks/
+.idea/
+*.iml
+
+# Editor-specific
+.vscode/
+*.swp
